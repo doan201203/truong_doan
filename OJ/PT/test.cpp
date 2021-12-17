@@ -14,5 +14,6 @@ int main(){
     }
     }
         cout<<arr[n];
+        //doan
 
 }
