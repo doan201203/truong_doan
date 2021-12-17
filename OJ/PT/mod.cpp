@@ -4,5 +4,5 @@ using namespace std;
 int main(){
     ll n;
     cin>>n;
-    cout<<n%9;
+    cout<<n%8;
 }
