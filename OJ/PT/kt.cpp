@@ -1,13 +1,13 @@
-#include<stdio.h>
-int sont(int n){
-    for(int i = 2 ; i< n ;i++){
-        if(n%i == 0)
-        return 0;
-    }
-    return n>1;
-}
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
 int main(){
-    int n;
-    scanf("%d",&n);
-    printf("%d", sont(n));
+    int n,begin,end,sum=0;
+    cin>>n;
+    cin>>begin>>end;
+    for(int i = 1 ; i<= n ; i++)
+    { int t,s;
+        t = i
+        if()
+    }
 }
