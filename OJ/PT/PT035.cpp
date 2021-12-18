@@ -14,7 +14,7 @@ int main(){
 			} else {
 				sum = sum + i + j;
 			}
-		}cout<<sum<<"\n";
+		}
 	}
     
     sum = sum -n;
