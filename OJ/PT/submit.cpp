@@ -1,16 +1,15 @@
-#include<iostream>
-using namespace std;
-int f(int n){
-    if(n == 0 || n == 1){
-        return 1;
-    }
-    return f(n-1) + f(n-2);
-}
-int ko(int n){
-    
+#include <stdio.h>
+#include <math.h>
+
+float tinha(float p,float r,int n){
+    return p * pow((1+r),n);
 }
 int main(){
-    int n;
-    scanf("%d",&n);
-    printf("%d", f(n));
+    float p,r;
+    float n;
+    scanf("%f%f%f",&p,&r,&n);
+    for(int i=1;i<=n;i++){
+        printf("%d\t%g\n",i,tinha(p,r,i));
+    }
+    return 0;
 }

@@ -6,7 +6,7 @@ bool fun(int i,int j)
    return abs(i)>abs(j);
 }
 int main(){
-    int n,arr[20001];
+    int n,k;
     cin>>n;
     for(int i = 0; i <n ;i++){
         cin>>arr[i];
