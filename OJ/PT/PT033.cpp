@@ -1,15 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
-float tien(float a, float b ){
-    for(int i = 1 ; )
-    return a*pow((1+(k/100)),k);
-}
 int main(){
-    float n,m,p;
-    cin>>n>>m>>p;
-    int tong=0;
-    while()
-
-    cout<<tong;
+    float bandau,lai,mongmuon;
+    cin>>bandau>>lai>>mongmuon;
+    if(lai == 0 || (mongmuon<bandau)){
+        return 0;
+    }
+    float tong;
+    int x = 0;
+    for (int i=1; tong < mongmuon; i++){
+        tong=bandau*pow((1+(lai/100)),i);
+        x++;
+        
+    }
+    cout<<x;
+    
 }
