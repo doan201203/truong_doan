@@ -1,19 +1,23 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <math.h>
 using namespace std;
-#define ll long long
-const int mxN=1e6;
-int n,arr[mxN+1];
-int main(){
-    cin>>n;
-    for(int i = 1; i<=n;i++){
-        arr[i]=1e9;
-        int i2=i;
-     while(i2){
-        arr[i]=min(arr[i],arr[i-i2%10]+1);
-        i2/=10;
-    }
-    }
-        cout<<arr[n];
-        //doan
-
+void insont(int n) {
+   while (n%2 == 0){
+      cout<<"2\t";
+      n = n/2;
+   }
+   for (int i = 3; i <= sqrt(n); i = i+2){
+      while (n%i == 0){
+         cout<<i<<"\t";
+         n = n/i;
+      }
+   }
+   if (n > 2)
+   cout<<n<<"\t";
+}
+int main() {
+   int n = 2632;
+   cout<<"Prime factors of "<<n<<" are :\t";
+   insont(n);
+   return 0;
 }
