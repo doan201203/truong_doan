@@ -1,1 +1,1 @@
-cout << "Enter first number: ";
+return sum;

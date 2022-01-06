@@ -2,21 +2,11 @@
 using namespace std;
 int main() 
 {
-    float a,b,c;
-    float p,s;
+    double a,b,c;
     cin>> a>> b>> c;
-    if(a<=0||b<=0||c<=0) 
-    cout<<"No Solutions";
-    if(a + b > c){
-        if(b+c>a){
-            if(c+a>b){
-                p=(a+b+c)/2;
-                s=sqrt((p*(p-a)*(p-b)*(p-c)));
-                cout<<setprecision(6)<<fixed<<s<<endl;
-            }
-        }
-       
-    }else{
-        cout<<"No Solution"<<endl;
-    } 
-} 
+    double p=(a+b+c)/2;
+    if(a >= b + c || b >= a + c || c >= a + b || a<=0 || b<=0 || c<=0)
+    cout<<"No Solution";
+    else
+    cout<<setprecision(6)<<fixed<<sqrt(p*(p-a)*(p-b)*(p-c));
+}

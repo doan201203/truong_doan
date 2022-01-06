@@ -1,17 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool fun(int i , int j){
+#define ll long long
+bool fun(int i, int j){
     return i>j;
 }
 int main(){
-    int arr[1000],n;
-    cin>>n;
+    ios_base::sync_with_stdio(0); // insert
+    cin.tie(0); // insert
+    vector<int>ans;
+    int n;cin>>n;
     for(int i=0;i<n;i++){
-        cin>>arr[i];
+        int k; cin>>k;
+        ans.push_back(k);
     }
-    sort(arr,arr+n,fun);
-    float phantu=n*0.1;
-    for(int i=phantu;i>0;i--){
-        cout<<arr[i];
+    sort(ans.begin(),ans.end(),fun);
+    int pt=ans[0]*10/100;
+    for(int j=0;j<pt;j++){
+        if(ans[j]==0)
+
+        return 0;
+        cout<<ans[j]<<" ";
     }
 }

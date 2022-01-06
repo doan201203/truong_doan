@@ -2,12 +2,13 @@
 using namespace std;
 #define ll long long
 int main(){
-    ll a,b,n,conlai;
+    ios_base::sync_with_stdio(0); // insert
+    cin.tie(0); // insert
+    int a,b,n,count=0;
     cin>>a>>b>>n;
-    conlai=n;
-    while(conlai>a){
-        conlai=n-a;
-        n-=a;
+    while(n){
+        n=(n-a)+b;
+        count++;
     }
-    cout<<conlai;
+    cout<<count;
 }

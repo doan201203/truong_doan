@@ -1,23 +1,31 @@
 #include<bits/stdc++.h>
 using namespace std;
-int pangram(char c[1005]){
-    strlwr(c);
-    int cnt[26]={0};
-    for(int i=0;strlen(c);i++){
-        cnt[c[i]-'a']=1;
-    }
-    for(int i=0;i<26;i++){
-        if(cnt[i]==0)
-        return 0;
-    }
-    return 1;
-}
 int main(){
-    char c1[1005],c2[1005];
-    gets(c1);
-    if(pangram(c1))
-    cout<<"YES"<<"\n";
-    else
-    cout<<"NO"<<"\n";
-    
+    string s;
+    cin.ignore();
+    while(getline(cin,s)){
+        int a[26]={0};
+        for(char x:s){
+            a[tolower(x)-'a']=1;
+        }
+        int count=0;
+        bool ok=true;
+        for(int i=0;i<26;i++){
+            if(a[i]==0){
+                ok=false;
+                break;
+            }
+        }
+        if(ok){
+            cout<<"Yes"<<"\n";
+        }
+        else{
+            cout<<"No"<<"\n";
+        }
+        // if(pr.size()==26){
+        //     cout<<"Yes"<<"\n";
+        // }else{
+        //     cout<<"No"<<"\n";
+        // }
+    }
 }
